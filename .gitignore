@@ -1,0 +1,11 @@
+__pycache__
+
+*.*~
+
+*.pc
+
+.env
+
+.idea
+
+template/*
