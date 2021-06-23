@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-jzjvzf3vy+^fngme@$=$+hgg(ku9c_eem%=+uvwgh(qussl(%r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'fusion.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-"""
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -89,12 +89,12 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-"""
 
+'''
 DATABASES = {
     'default':dj_database_url.config()
 }
-
+'''
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
@@ -143,7 +143,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # E-mail teste console
-#EMAIL_BACKEND= 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND= 'django.core.mail.backends.console.EmailBackend'
 
 '''
 # Email producao
